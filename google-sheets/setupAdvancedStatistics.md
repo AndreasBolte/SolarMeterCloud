@@ -124,6 +124,16 @@ Under the **Customize** tab in the Chart editor:
 This ensures the chart is readable, consistent, and visually aligned with your project.
 
 ---
+### Number formatting: Prefix for units
+
+In the **Chart editor → Customize → Series → Key value**, you can define a **prefix** for the displayed values.  
+Enter the unit **with a leading space**, for example:
+
+- ` kWh`
+- ` W`
+- ` V`
+
+This ensures that the unit is shown directly in the chart labels without modifying the underlying data.
 
 ## 2.10 Publish to the web (Interactive embed link)
 
