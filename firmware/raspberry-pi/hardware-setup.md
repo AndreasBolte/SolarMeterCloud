@@ -44,31 +44,30 @@ Purpose: Operating system and Node‑RED data
 
 Type:
 
-Industrial USB‑to‑RS485 converter
+# USB‑RS485 Adapter
 
-with FT232RNL (USB‑UART chip)
+For Modbus‑RTU communication between the Raspberry Pi and the SDM120 energy meter, the following adapter type is used:
 
-and SP485EEN (RS485 transceiver)
+**Waveshare Industrial USB to RS485 Converter**  
+with **FT232RNL** (USB‑UART) and **SP485EEN** (RS485 transceiver)
+
+## Key Features
+
+- Original **FT232RNL** USB‑UART chip  
+- **SP485EEN** industrial‑grade RS485 transceiver  
+- Automatic transceiving (no manual DE/RE control required)  
+- Embedded protection circuits:  
+  - Resettable fuse  
+  - ESD protection  
+  - TVS diode  
+- Screw terminals for A/B/GND  
+- Robust industrial enclosure  
+- Fully compatible with Raspberry Pi OS  
+- Detected as `/dev/ttyUSB0` (or `/dev/ttyUSB1` if multiple devices are connected)
+
+## Connection Overview
 
 
-
-Characteristics:
-
-
-
-Automatic TX/RX switching
-
-
-
-RS485 A/B terminals
-
-
-
-Integrated protection circuits (resettable fuse, ESD protection, TVS diode)
-
-
-
-Detected under Raspberry Pi OS as /dev/ttyUSB0
 
 
 

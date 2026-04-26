@@ -1,0 +1,2285 @@
+[
+    {
+        "id": "b73d554161024e85",
+        "type": "tab",
+        "label": "SolarMeterCloud",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6632c20fd7e2e020",
+        "type": "tab",
+        "label": "Statistics",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "91059c5b0441c792",
+        "type": "modbus-client",
+        "name": "Solarmeter",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "9600",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "1000",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "20",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "23f23fa0021180b2",
+        "type": "ui_tab",
+        "name": "SolarMeterCloud",
+        "icon": "cloud",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "faab9517a9dfe71e",
+        "type": "ui_group",
+        "name": "Solar",
+        "tab": "23f23fa0021180b2",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8c682275a95735db",
+        "type": "ui_group",
+        "name": "Timestamp",
+        "tab": "23f23fa0021180b2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1c71a74439a03faa",
+        "type": "gauth",
+        "name": "solar-227@solar-471514.iam.gserviceaccount.com"
+    },
+    {
+        "id": "faf407ee23314340",
+        "type": "mqtt-broker",
+        "name": "SolarMeterCloud",
+        "broker": "colmuspro.net",
+        "port": "32791",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "81a36c1d8bd48a7e",
+        "type": "ui_link",
+        "name": "Google Sheets",
+        "link": "https://docs.google.com/spreadsheets/d/1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg/edit?gid=1430066979#gid=1430066979",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 3
+    },
+    {
+        "id": "3c7736c82f324006",
+        "type": "ui_group",
+        "name": "Active Power",
+        "tab": "fc5fb8dab012ca05",
+        "order": 1,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7ab4773221b2762",
+        "type": "ui_group",
+        "name": "Import Energy",
+        "tab": "fc5fb8dab012ca05",
+        "order": 2,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c22dde84e87a54ab",
+        "type": "ui_group",
+        "name": "Export Energy",
+        "tab": "fc5fb8dab012ca05",
+        "order": 3,
+        "disp": false,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fc5fb8dab012ca05",
+        "type": "ui_tab",
+        "name": "Statistic",
+        "icon": "show_chart",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "0dd10fd4757c34e3",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cccb25d8726656b8",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30001",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30001', x);\nmsg.payload = x + ' A';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 940,
+        "wires": [
+            [
+                "f3296c9615b2f82c"
+            ]
+        ]
+    },
+    {
+        "id": "042227ce689e2238",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "SolarMeter",
+        "info": "",
+        "x": 620,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "faac1550d3496b31",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30007",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30007', x);\nmsg.payload = x + ' A';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1180,
+        "wires": [
+            [
+                "8c64dc39937a5e63"
+            ]
+        ]
+    },
+    {
+        "id": "ee64d5060c007146",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30013', x);\nmsg.payload = x + ' W';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1540,
+        "wires": [
+            [
+                "0e4742637aaca65c"
+            ]
+        ]
+    },
+    {
+        "id": "cc32e343c0d0ec7f",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30073",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30073', x);\nmsg.payload = x + ' kWh';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1120,
+        "y": 2320,
+        "wires": [
+            [
+                "4a1d61231dcc2344"
+            ]
+        ]
+    },
+    {
+        "id": "d3650a9b9108b869",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30071",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30071', x);\nmsg.payload = x + ' Hz';\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 2040,
+        "wires": [
+            [
+                "a0d87215546f8f20"
+            ]
+        ]
+    },
+    {
+        "id": "4c32c97a040cb5b4",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30075",
+        "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30075', x);\nmsg.payload = x + ' kWh';\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 2720,
+        "wires": [
+            [
+                "75e458e47584cdd2"
+            ]
+        ]
+    },
+    {
+        "id": "69dc0d9d6bbd70e6",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 940,
+        "wires": [
+            [
+                "a5f38f234d678158"
+            ]
+        ]
+    },
+    {
+        "id": "5a762832cde5572b",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 220,
+        "y": 1180,
+        "wires": [
+            [
+                "ee6c93df2ba76fa8"
+            ]
+        ]
+    },
+    {
+        "id": "c56f90af910a18af",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 160,
+        "y": 1540,
+        "wires": [
+            [
+                "1cea48ca24b3c635"
+            ]
+        ]
+    },
+    {
+        "id": "937ce96730eb51e0",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 220,
+        "y": 2040,
+        "wires": [
+            [
+                "a7241cc94295e8a0"
+            ]
+        ]
+    },
+    {
+        "id": "1ec605a81ece44a3",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 2320,
+        "wires": [
+            [
+                "4db07e3dd778f8eb"
+            ]
+        ]
+    },
+    {
+        "id": "db378e0d770ee922",
+        "type": "delay",
+        "z": "b73d554161024e85",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 320,
+        "y": 2720,
+        "wires": [
+            [
+                "b0b9b80251aabffa"
+            ]
+        ]
+    },
+    {
+        "id": "0cede0797a9f72c1",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Every minute",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 860,
+        "wires": [
+            [
+                "69dc0d9d6bbd70e6"
+            ]
+        ]
+    },
+    {
+        "id": "389af89976cd9340",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30001",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1000,
+        "wires": [
+            [
+                "b73982b09bba615c",
+                "e6377d4710e69daa"
+            ]
+        ]
+    },
+    {
+        "id": "3934f0f95661e3af",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30007",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 1240,
+        "wires": [
+            [
+                "19acf43af8eac91e",
+                "e737a0c952e5dc56"
+            ]
+        ]
+    },
+    {
+        "id": "d8980276856f5234",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1660,
+        "wires": [
+            [
+                "0d09ba0424ec9a9b",
+                "96964a86f684a5be"
+            ]
+        ]
+    },
+    {
+        "id": "212038c9a5f125b2",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30071",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 2100,
+        "wires": [
+            [
+                "f79a9e09aa854f35",
+                "1c6f6be4fd3f6f04"
+            ]
+        ]
+    },
+    {
+        "id": "47d5d2e5aaf81cfb",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30073",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 2380,
+        "wires": [
+            [
+                "2e2f89bb042d2d9d",
+                "894da70fc7391f83"
+            ]
+        ]
+    },
+    {
+        "id": "472940938d926ac5",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30075",
+        "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1094.1990966796875,
+        "y": 2797.2706298828125,
+        "wires": [
+            [
+                "b7af3bf9a1601008",
+                "797c002ef538ace1"
+            ]
+        ]
+    },
+    {
+        "id": "f93f9f7c64f511b1",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "Voltage",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 710,
+        "y": 940,
+        "wires": [
+            [
+                "389af89976cd9340",
+                "cccb25d8726656b8"
+            ]
+        ]
+    },
+    {
+        "id": "162c2b1465ed8610",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "Voltage",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 770,
+        "y": 1180,
+        "wires": [
+            [
+                "faac1550d3496b31",
+                "3934f0f95661e3af"
+            ]
+        ]
+    },
+    {
+        "id": "d4203335fbb0065f",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "Voltage",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 590,
+        "y": 1540,
+        "wires": [
+            [
+                "ee64d5060c007146",
+                "d8980276856f5234"
+            ]
+        ]
+    },
+    {
+        "id": "96851f1a959f8271",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "Voltage",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 850,
+        "y": 2320,
+        "wires": [
+            [
+                "cc32e343c0d0ec7f",
+                "47d5d2e5aaf81cfb"
+            ]
+        ]
+    },
+    {
+        "id": "7518b7c4fb3535bf",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "ImportActiveEnergy ",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 830,
+        "y": 2040,
+        "wires": [
+            [
+                "d3650a9b9108b869",
+                "212038c9a5f125b2"
+            ]
+        ]
+    },
+    {
+        "id": "8e5f314890431558",
+        "type": "buffer-parser",
+        "z": "b73d554161024e85",
+        "name": "",
+        "data": "payload",
+        "dataType": "msg",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "type": "floatbe",
+                "name": "Voltage",
+                "offset": 0,
+                "length": 1,
+                "offsetbit": 0,
+                "scale": "1",
+                "mask": ""
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "resultType": "value",
+        "resultTypeType": "return",
+        "multipleResult": false,
+        "fanOutMultipleResult": false,
+        "setTopic": true,
+        "outputs": 1,
+        "x": 890,
+        "y": 2720,
+        "wires": [
+            [
+                "4c32c97a040cb5b4",
+                "472940938d926ac5"
+            ]
+        ]
+    },
+    {
+        "id": "a5f38f234d678158",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30001 Phase 1 line to neutral volts.",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "0",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 460,
+        "y": 940,
+        "wires": [
+            [
+                "f93f9f7c64f511b1"
+            ],
+            [
+                "5a762832cde5572b"
+            ]
+        ]
+    },
+    {
+        "id": "ee6c93df2ba76fa8",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30007 Current",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "6",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 460,
+        "y": 1180,
+        "wires": [
+            [
+                "162c2b1465ed8610"
+            ],
+            [
+                "c56f90af910a18af"
+            ]
+        ]
+    },
+    {
+        "id": "1cea48ca24b3c635",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30013 Active power",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "12",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 370,
+        "y": 1540,
+        "wires": [
+            [
+                "d4203335fbb0065f"
+            ],
+            [
+                "937ce96730eb51e0"
+            ]
+        ]
+    },
+    {
+        "id": "4db07e3dd778f8eb",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30073 Import active energy",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "72",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 580,
+        "y": 2320,
+        "wires": [
+            [
+                "96851f1a959f8271"
+            ],
+            [
+                "db378e0d770ee922"
+            ]
+        ]
+    },
+    {
+        "id": "a7241cc94295e8a0",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30071 Frequency of supply voltages.",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "70",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "x": 550,
+        "y": 2040,
+        "wires": [
+            [
+                "7518b7c4fb3535bf"
+            ],
+            [
+                "1ec605a81ece44a3"
+            ]
+        ]
+    },
+    {
+        "id": "b0b9b80251aabffa",
+        "type": "modbus-getter",
+        "z": "b73d554161024e85",
+        "name": "30075 Export active energy",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "showWarnings": true,
+        "logIOActivities": false,
+        "unitid": "1",
+        "dataType": "InputRegister",
+        "adr": "74",
+        "quantity": "2",
+        "server": "91059c5b0441c792",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": true,
+        "keepMsgProperties": true,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 620,
+        "y": 2720,
+        "wires": [
+            [
+                "8e5f314890431558"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f3296c9615b2f82c",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Voltage",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1260,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "8c64dc39937a5e63",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Current",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1320,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "0e4742637aaca65c",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Active Pover",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1290,
+        "y": 1520,
+        "wires": []
+    },
+    {
+        "id": "4a1d61231dcc2344",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Import Energie",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1380,
+        "y": 2320,
+        "wires": []
+    },
+    {
+        "id": "a0d87215546f8f20",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Frequency",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1370.1990966796875,
+        "y": 2040.1416015625,
+        "wires": []
+    },
+    {
+        "id": "75e458e47584cdd2",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "faab9517a9dfe71e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Export Energie",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1460,
+        "y": 2720,
+        "wires": []
+    },
+    {
+        "id": "b73982b09bba615c",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 1",
+        "func": "deadband",
+        "gap": "1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 750,
+        "y": 1080,
+        "wires": [
+            [
+                "c09c6441c4f1093b"
+            ]
+        ]
+    },
+    {
+        "id": "c5ce272ed5734b5e",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F4",
+        "flatten": true,
+        "name": "solar!F4",
+        "x": 1280,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c09c6441c4f1093b",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30001",
+        "func": "msg.payload = Math.round(flow.get('S30001'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1080,
+        "wires": [
+            [
+                "c5ce272ed5734b5e"
+            ]
+        ]
+    },
+    {
+        "id": "313b401539f3367c",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 780,
+        "y": 1120,
+        "wires": [
+            [
+                "c09c6441c4f1093b"
+            ]
+        ]
+    },
+    {
+        "id": "19acf43af8eac91e",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 0.1",
+        "func": "deadband",
+        "gap": "0.1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 740,
+        "y": 1400,
+        "wires": [
+            [
+                "a7767b533dc8cc2a"
+            ]
+        ]
+    },
+    {
+        "id": "ce0c3f5f0edd26b8",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F5",
+        "flatten": true,
+        "name": "solar!F5",
+        "x": 1300,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a7767b533dc8cc2a",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30007",
+        "func": "msg.payload = Math.round(flow.get('S30007'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 1400,
+        "wires": [
+            [
+                "ce0c3f5f0edd26b8"
+            ]
+        ]
+    },
+    {
+        "id": "bc94faa08e176021",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 880,
+        "y": 1460,
+        "wires": [
+            [
+                "a7767b533dc8cc2a"
+            ]
+        ]
+    },
+    {
+        "id": "0d09ba0424ec9a9b",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 1",
+        "func": "deadband",
+        "gap": "1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 790,
+        "y": 1760,
+        "wires": [
+            [
+                "e30d68dc35584ea2"
+            ]
+        ]
+    },
+    {
+        "id": "e4a94debbee412ce",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F6",
+        "flatten": true,
+        "name": "solar!F6",
+        "x": 1300,
+        "y": 1760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e30d68dc35584ea2",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013",
+        "func": "msg.payload = Math.round(flow.get('S30013'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 1760,
+        "wires": [
+            [
+                "e4a94debbee412ce",
+                "5937196fd8d61001",
+                "cee4a2664478c9bd",
+                "fa4037a7c5969b3a"
+            ]
+        ]
+    },
+    {
+        "id": "7aada7aa1fbfcd32",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 840,
+        "y": 1820,
+        "wires": [
+            [
+                "e30d68dc35584ea2"
+            ]
+        ]
+    },
+    {
+        "id": "f79a9e09aa854f35",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 1",
+        "func": "deadband",
+        "gap": "1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 930,
+        "y": 2180,
+        "wires": [
+            [
+                "66924abc4870fd6c"
+            ]
+        ]
+    },
+    {
+        "id": "80113d4771e0b9d0",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F7",
+        "flatten": true,
+        "name": "solar!F7",
+        "x": 1420,
+        "y": 2200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "66924abc4870fd6c",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30071",
+        "func": "msg.payload = Math.round(flow.get('S30071'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1200,
+        "y": 2200,
+        "wires": [
+            [
+                "80113d4771e0b9d0"
+            ]
+        ]
+    },
+    {
+        "id": "ecef4733dcfba369",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1000,
+        "y": 2260,
+        "wires": [
+            [
+                "66924abc4870fd6c"
+            ]
+        ]
+    },
+    {
+        "id": "2e2f89bb042d2d9d",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 1",
+        "func": "deadband",
+        "gap": "1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 990,
+        "y": 2580,
+        "wires": [
+            [
+                "c0ae8a7140817345"
+            ]
+        ]
+    },
+    {
+        "id": "ed90478d1d739a52",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F8",
+        "flatten": true,
+        "name": "solar!F8",
+        "x": 1460,
+        "y": 2580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0ae8a7140817345",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30073",
+        "func": "msg.payload = Math.round(flow.get('S30073'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 2580,
+        "wires": [
+            [
+                "ed90478d1d739a52"
+            ]
+        ]
+    },
+    {
+        "id": "fd20c6ddfb18701c",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1040,
+        "y": 2640,
+        "wires": [
+            [
+                "c0ae8a7140817345"
+            ]
+        ]
+    },
+    {
+        "id": "b7af3bf9a1601008",
+        "type": "rbe",
+        "z": "b73d554161024e85",
+        "name": "Block until the value change is greater than 1",
+        "func": "deadband",
+        "gap": "1",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 970,
+        "y": 2940,
+        "wires": [
+            [
+                "9fe157d9e461aef8"
+            ]
+        ]
+    },
+    {
+        "id": "e2b35e73b7e25c5f",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solar!F9",
+        "flatten": true,
+        "name": "solar!F9",
+        "x": 1440,
+        "y": 2940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9fe157d9e461aef8",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30075",
+        "func": "msg.payload = Math.round(flow.get('S30075'));\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 2940,
+        "wires": [
+            [
+                "e2b35e73b7e25c5f"
+            ]
+        ]
+    },
+    {
+        "id": "e65e129cd53a9af8",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "Once after 90s",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "90",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1020,
+        "y": 3000,
+        "wires": [
+            [
+                "9fe157d9e461aef8"
+            ]
+        ]
+    },
+    {
+        "id": "e6377d4710e69daa",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/VoltageS30001",
+        "topic": "SolarMeterCloud/Solar/Meter/VoltageS30001",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 1250,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e737a0c952e5dc56",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/CurrentS30007",
+        "topic": "SolarMeterCloud/Solar/Meter/CurrentS30007",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 1250,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "96964a86f684a5be",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/ActivePowerS30013",
+        "topic": "SolarMeterCloud/Solar/Meter/ActivePowerS30013",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 970,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "1c6f6be4fd3f6f04",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/FrequencyS30071",
+        "topic": "SolarMeterCloud/Solar/Meter/FrequencyS30071",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 1310.1990966796875,
+        "y": 2157.2060546875,
+        "wires": []
+    },
+    {
+        "id": "894da70fc7391f83",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/ImportEnergyS30073",
+        "topic": "SolarMeterCloud/Solar/Meter/ImportEnergyS30073",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 1370,
+        "y": 2460,
+        "wires": []
+    },
+    {
+        "id": "797c002ef538ace1",
+        "type": "mqtt out",
+        "z": "b73d554161024e85",
+        "name": "SolarMeterCloud/Solar/Meter/ExportEnergyS30075",
+        "topic": "SolarMeterCloud/Solar/Meter/ExportEnergyS30075",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "faf407ee23314340",
+        "x": 1430,
+        "y": 2800,
+        "wires": []
+    },
+    {
+        "id": "c5af409bf723d500",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "Sheet1!A4:G4",
+        "func": "msg.payload = [flow.get('timestamp'), flow.get('S30073'), flow.get('S30075'),\n               flow.get('S30013Average1day'), flow.get('S30013Minimum1day'), flow.get('S30013Maximum1day'),];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 3100,
+        "wires": [
+            [
+                "623c14a2745316bd"
+            ]
+        ]
+    },
+    {
+        "id": "623c14a2745316bd",
+        "type": "GSheet",
+        "z": "b73d554161024e85",
+        "creds": "1c71a74439a03faa",
+        "method": "append",
+        "action": "",
+        "sheet": "1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg",
+        "cells": "solarStatistics!A4:G4",
+        "flatten": true,
+        "name": "solarStatistics!A4:G4",
+        "x": 780,
+        "y": 3100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8df71ec368327fb",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "every day at 02:00 o' clock",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 02 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 3100,
+        "wires": [
+            [
+                "c5af409bf723d500"
+            ]
+        ]
+    },
+    {
+        "id": "d33e25af7ccaf83d",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1450,
+        "y": 2980,
+        "wires": []
+    },
+    {
+        "id": "ea72d497e082b0fb",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1470,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "e89635168d35187b",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1410,
+        "y": 2240,
+        "wires": []
+    },
+    {
+        "id": "683c566eb6338571",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1370,
+        "y": 2080,
+        "wires": []
+    },
+    {
+        "id": "7ee4a3ecd288371f",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1310,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "f1a54ad2062bc2bc",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1291.1990966796875,
+        "y": 1118.1416015625,
+        "wires": []
+    },
+    {
+        "id": "e31d5947c4805e4a",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013Average1day",
+        "func": "flow.set('S30013Average1day', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f57f7390f3fdebde",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013Minimum1day",
+        "func": "flow.set('S30013Minimum1day', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9163f1349a5105e",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "S30013Maximum1day",
+        "func": "flow.set('S30013Maximum1day', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af285e46562c0c74",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "present value",
+        "info": "",
+        "x": 1310,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "e386e9750236341d",
+        "type": "comment",
+        "z": "b73d554161024e85",
+        "name": "solar statistics",
+        "info": "",
+        "x": 250,
+        "y": 3060,
+        "wires": []
+    },
+    {
+        "id": "5937196fd8d61001",
+        "type": "aggregator",
+        "z": "b73d554161024e85",
+        "name": "S30013Average1day",
+        "topic": "",
+        "intervalCount": 1,
+        "intervalUnits": "d",
+        "submitIncompleteInterval": false,
+        "submitPerTopic": false,
+        "aggregationType": "mean",
+        "x": 1260,
+        "y": 1860,
+        "wires": [
+            [
+                "e31d5947c4805e4a"
+            ]
+        ]
+    },
+    {
+        "id": "cee4a2664478c9bd",
+        "type": "aggregator",
+        "z": "b73d554161024e85",
+        "name": "S30013Minimum1day",
+        "topic": "",
+        "intervalCount": 1,
+        "intervalUnits": "d",
+        "submitIncompleteInterval": false,
+        "submitPerTopic": false,
+        "aggregationType": "min",
+        "x": 1260,
+        "y": 1900,
+        "wires": [
+            [
+                "f57f7390f3fdebde"
+            ]
+        ]
+    },
+    {
+        "id": "fa4037a7c5969b3a",
+        "type": "aggregator",
+        "z": "b73d554161024e85",
+        "name": "S30013Maximum1day",
+        "topic": "",
+        "intervalCount": 1,
+        "intervalUnits": "d",
+        "submitIncompleteInterval": false,
+        "submitPerTopic": false,
+        "aggregationType": "max",
+        "x": 1260,
+        "y": 1940,
+        "wires": [
+            [
+                "a9163f1349a5105e"
+            ]
+        ]
+    },
+    {
+        "id": "552d5d66.9404f4",
+        "type": "inject",
+        "z": "b73d554161024e85",
+        "name": "intervall 1 sec",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 700,
+        "wires": [
+            [
+                "19133ae9.fd9765"
+            ]
+        ]
+    },
+    {
+        "id": "19133ae9.fd9765",
+        "type": "function",
+        "z": "b73d554161024e85",
+        "name": "timestamp",
+        "func": "global.set('timestamp', new Date().toISOString() ); \nnew Date(1777139513587).toISOString()\n// Generate an ISO‑8601 timestamp in UTC (English, international, unambiguous)\nmsg.payload = new Date().toISOString();\nflow.set('timestamp', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 700,
+        "wires": [
+            [
+                "1502cb78.076475"
+            ]
+        ]
+    },
+    {
+        "id": "1502cb78.076475",
+        "type": "ui_text",
+        "z": "b73d554161024e85",
+        "group": "8c682275a95735db",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Timestamp",
+        "label": "Timestamp",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 930,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "669c51e9fdb44428",
+        "type": "ui_template",
+        "z": "6632c20fd7e2e020",
+        "group": "3c7736c82f324006",
+        "name": "Active Power",
+        "order": 1,
+        "width": 18,
+        "height": "12",
+        "format": "<iframe width=\"976\" height=\"604\" seamless frameborder=\"0\" scrolling=\"no\" src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRfUsWwHuXq7c6nPdIOcbMGO6H4wfInrEk2udqtVtTVkVuvqEJSua-_I36V6sDZ48Vk7TDtaFmJpitE/pubchart?oid=1300257064&amp;format=interactive\"></iframe>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aad2cc22ecad25b5",
+        "type": "ui_template",
+        "z": "6632c20fd7e2e020",
+        "group": "a7ab4773221b2762",
+        "name": "Import Energy",
+        "order": 1,
+        "width": 18,
+        "height": "12",
+        "format": "<iframe width=\"965\" height=\"583\" seamless frameborder=\"0\" scrolling=\"no\" src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRfUsWwHuXq7c6nPdIOcbMGO6H4wfInrEk2udqtVtTVkVuvqEJSua-_I36V6sDZ48Vk7TDtaFmJpitE/pubchart?oid=1339005043&amp;format=interactive\"></iframe>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 340,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6d695538ef7807e",
+        "type": "ui_template",
+        "z": "6632c20fd7e2e020",
+        "group": "c22dde84e87a54ab",
+        "name": "Export Energy",
+        "order": 1,
+        "width": "18",
+        "height": "12",
+        "format": "<iframe width=\"965\" height=\"579\" seamless frameborder=\"0\" scrolling=\"no\" src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRfUsWwHuXq7c6nPdIOcbMGO6H4wfInrEk2udqtVtTVkVuvqEJSua-_I36V6sDZ48Vk7TDtaFmJpitE/pubchart?oid=1033973065&amp;format=interactive\"></iframe>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 340,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fe9027d7f7365c4a",
+        "type": "ui_template",
+        "z": "6632c20fd7e2e020",
+        "group": "c22dde84e87a54ab",
+        "name": "Table Diagram",
+        "order": 1,
+        "width": "18",
+        "height": "12",
+        "format": "<iframe width=\"791\" height=\"1550\" seamless frameborder=\"0\" scrolling=\"no\" src=\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRfUsWwHuXq7c6nPdIOcbMGO6H4wfInrEk2udqtVtTVkVuvqEJSua-_I36V6sDZ48Vk7TDtaFmJpitE/pubchart?oid=1869806409&amp;format=interactive\"></iframe>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 340,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    }
+]
