@@ -164,7 +164,7 @@ To embed charts or live data from Google Sheets into SolarMeterCloud, you must p
   seamless 
   frameborder="0" 
   scrolling="no" 
-  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRfUsWwHuXq7c6nPdIOcbMGO6H4wfInrEk2udqtVtTVkVuvqEJSua-_I36V6sDZ48Vk7TDtaFmJpitE/pubchart?oid=734868573&format=interactive">
+  src="https://docs.google.com/spreadsheets/d/e/EXAMPLEXXXXXXXXXXXXXXXXXXXX/pubchart?oid=734868573&format=interactive">
 </iframe>
 
 
