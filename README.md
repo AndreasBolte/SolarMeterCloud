@@ -70,6 +70,20 @@ Sensor/Meter → Firmware → MQTT Broker → Node‑RED → Google Sheets → i
 
 ---
 
+## Google Cloud Setup Steps
+
+- Create a Google Cloud project
+
+- Create a service account
+
+- Generate a JSON key
+
+- Share the Google Sheet
+
+- Import the JSON key into SolarMeterCloud / Node‑RED
+
+---
+
 ## Google Sheets Integration
 
 - **setupFirstStep.md** – Basic setup (required)  
