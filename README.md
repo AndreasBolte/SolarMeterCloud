@@ -11,6 +11,25 @@ Published Google Sheets charts can be embedded into any HTTPS website using an i
 
 ## Table of Contents
 
+Table of Contents
+Features
+
+Architecture
+
+MQTT Topics
+
+Google Sheets Integration
+
+Google Sheets Iframe
+
+Node‑RED Flow
+
+Important Safety Notice
+
+Required Node‑RED Modules
+
+Security Notice: Google Credentials Removed
+
 - [Features](#features)
 - [Architecture](#architecture)
 - [MQTT Topics](#mqtt-topics)
@@ -58,8 +77,6 @@ Sensor/Meter → Firmware → MQTT Broker → Node‑RED → Google Sheets → i
 
 ---
 
-
-
 ## Google Sheets Iframe
 
 1. In Google Sheets: **File → Publish to the web**  
@@ -99,3 +116,13 @@ To install all dependencies, run the following command inside the project direct
 ```bash
 npm install
 ```
+
+## Security Notice: Google Credentials Removed
+
+All Google credentials, API keys, service account files, and authentication tokens have been removed from this repository.
+Google actively scans public Git repositories and may suspend or restrict accounts if exposed credentials are detected.
+For this reason, no sensitive configuration files are included here.
+
+To use SolarMeterCloud with your own Google Sheets setup, you must create your own service account and credentials and store them securely outside the repository.
+
+---

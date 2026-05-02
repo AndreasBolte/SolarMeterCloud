@@ -1,6 +1,6 @@
 [
     {
-        "id": "b73d554161024e85",
+        "id": "78b0f43927df8cf9",
         "type": "tab",
         "label": "SolarMeterCloud",
         "disabled": false,
@@ -8,262 +8,9 @@
         "env": []
     },
     {
-        "id": "6632c20fd7e2e020",
-        "type": "tab",
-        "label": "Statistics",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "91059c5b0441c792",
-        "type": "modbus-client",
-        "name": "Solarmeter",
-        "clienttype": "serial",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": true,
-        "tcpHost": "127.0.0.1",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyACM0",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "1000",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": "20",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "23f23fa0021180b2",
-        "type": "ui_tab",
-        "name": "SolarMeterCloud",
-        "icon": "cloud",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "faab9517a9dfe71e",
-        "type": "ui_group",
-        "name": "Solar",
-        "tab": "23f23fa0021180b2",
-        "order": 2,
-        "disp": true,
-        "width": "8",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "8c682275a95735db",
-        "type": "ui_group",
-        "name": "Timestamp",
-        "tab": "23f23fa0021180b2",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "1c71a74439a03faa",
-        "type": "gauth",
-        "name": "Unknown"
-    },
-    {
-        "id": "faf407ee23314340",
-        "type": "mqtt-broker",
-        "name": "SolarMeterCloud",
-        "broker": "colmuspro.net",
-        "port": "32791",
-        "tls": "",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "5",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
-        "id": "81a36c1d8bd48a7e",
-        "type": "ui_link",
-        "name": "Google Sheets",
-        "link": "https://docs.google.com/spreadsheets/d/1xm1NbXOQACdRYTUUMz24QTQx8gbOpYVcBItz1SsMBZg/edit?gid=1430066979#gid=1430066979",
-        "icon": "open_in_browser",
-        "target": "newtab",
-        "order": 3
-    },
-    {
-        "id": "3c7736c82f324006",
-        "type": "ui_group",
-        "name": "Active Power",
-        "tab": "fc5fb8dab012ca05",
-        "order": 1,
-        "disp": false,
-        "width": "18",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "a7ab4773221b2762",
-        "type": "ui_group",
-        "name": "Import Energy",
-        "tab": "fc5fb8dab012ca05",
-        "order": 2,
-        "disp": false,
-        "width": "18",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "c22dde84e87a54ab",
-        "type": "ui_group",
-        "name": "Export Energy",
-        "tab": "fc5fb8dab012ca05",
-        "order": 3,
-        "disp": false,
-        "width": "18",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "fc5fb8dab012ca05",
-        "type": "ui_tab",
-        "name": "Statistic",
-        "icon": "show_chart",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "0dd10fd4757c34e3",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-light",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#097479",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#0094ce",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey",
-                "palette": "light"
-            }
-        },
-        "site": {
-            "name": "Node-RED Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "false",
-            "lockMenu": "false",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
-        "id": "cccb25d8726656b8",
+        "id": "6b8159ad83020446",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30001",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30001', x);\nmsg.payload = x + ' A';\nreturn msg;",
         "outputs": 1,
@@ -276,14 +23,14 @@
         "y": 940,
         "wires": [
             [
-                "f3296c9615b2f82c"
+                "7c180442be53fa33"
             ]
         ]
     },
     {
-        "id": "042227ce689e2238",
+        "id": "b0caa7e2d131b91a",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeter",
         "info": "",
         "x": 620,
@@ -291,9 +38,9 @@
         "wires": []
     },
     {
-        "id": "faac1550d3496b31",
+        "id": "8bad341de1976d49",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30007",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30007', x);\nmsg.payload = x + ' A';\nreturn msg;",
         "outputs": 1,
@@ -306,14 +53,14 @@
         "y": 1180,
         "wires": [
             [
-                "8c64dc39937a5e63"
+                "2672bc5185574ca9"
             ]
         ]
     },
     {
-        "id": "ee64d5060c007146",
+        "id": "d50d901d9fb59818",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30013', x);\nmsg.payload = x + ' W';\nreturn msg;",
         "outputs": 1,
@@ -326,14 +73,14 @@
         "y": 1540,
         "wires": [
             [
-                "0e4742637aaca65c"
+                "d481cbd4d0e9a444"
             ]
         ]
     },
     {
-        "id": "cc32e343c0d0ec7f",
+        "id": "8ad6361d59457335",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30073",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30073', x);\nmsg.payload = x + ' kWh';\nreturn msg;",
         "outputs": 1,
@@ -346,14 +93,14 @@
         "y": 2320,
         "wires": [
             [
-                "4a1d61231dcc2344"
+                "f2db9c1245079aa9"
             ]
         ]
     },
     {
-        "id": "d3650a9b9108b869",
+        "id": "881bf1ad6264efb3",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30071",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30071', x);\nmsg.payload = x + ' Hz';\nreturn msg;\n",
         "outputs": 1,
@@ -366,14 +113,14 @@
         "y": 2040,
         "wires": [
             [
-                "a0d87215546f8f20"
+                "5c1e9f865fa36127"
             ]
         ]
     },
     {
-        "id": "4c32c97a040cb5b4",
+        "id": "d8df70aa3f514bf9",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30075",
         "func": "var x = Math.round(msg.payload[0] * 100) / 100;\nflow.set('S30075', x);\nmsg.payload = x + ' kWh';\nreturn msg;",
         "outputs": 1,
@@ -385,15 +132,13 @@
         "x": 1160,
         "y": 2720,
         "wires": [
-            [
-                "75e458e47584cdd2"
-            ]
+            []
         ]
     },
     {
-        "id": "69dc0d9d6bbd70e6",
+        "id": "dd91de7556fbf1cd",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -411,14 +156,14 @@
         "y": 940,
         "wires": [
             [
-                "a5f38f234d678158"
+                "c6a08217c11ddb21"
             ]
         ]
     },
     {
-        "id": "5a762832cde5572b",
+        "id": "43c521322db57db6",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -436,14 +181,14 @@
         "y": 1180,
         "wires": [
             [
-                "ee6c93df2ba76fa8"
+                "7b7087a7f969b323"
             ]
         ]
     },
     {
-        "id": "c56f90af910a18af",
+        "id": "2964726ce5e8a4a8",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -461,14 +206,14 @@
         "y": 1540,
         "wires": [
             [
-                "1cea48ca24b3c635"
+                "e786255b4b63a32d"
             ]
         ]
     },
     {
-        "id": "937ce96730eb51e0",
+        "id": "eceb96db23130fed",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -486,14 +231,14 @@
         "y": 2040,
         "wires": [
             [
-                "a7241cc94295e8a0"
+                "33d3f525fd32a651"
             ]
         ]
     },
     {
-        "id": "1ec605a81ece44a3",
+        "id": "ce20814e5efd9f59",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -511,14 +256,14 @@
         "y": 2320,
         "wires": [
             [
-                "4db07e3dd778f8eb"
+                "2cc8cfa8ccce3d07"
             ]
         ]
     },
     {
-        "id": "db378e0d770ee922",
+        "id": "719ba9bd923246ee",
         "type": "delay",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -536,14 +281,14 @@
         "y": 2720,
         "wires": [
             [
-                "b0b9b80251aabffa"
+                "c95f40b16fd869b7"
             ]
         ]
     },
     {
-        "id": "0cede0797a9f72c1",
+        "id": "34fc306aa3a571c6",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Every minute",
         "props": [
             {
@@ -561,14 +306,14 @@
         "y": 860,
         "wires": [
             [
-                "69dc0d9d6bbd70e6"
+                "dd91de7556fbf1cd"
             ]
         ]
     },
     {
-        "id": "389af89976cd9340",
+        "id": "420f62f2583cad91",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30001",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100\nreturn msg;",
         "outputs": 1,
@@ -581,15 +326,15 @@
         "y": 1000,
         "wires": [
             [
-                "b73982b09bba615c",
-                "e6377d4710e69daa"
+                "ef42c2ea35d47344",
+                "d23b3642cdf0b1e3"
             ]
         ]
     },
     {
-        "id": "3934f0f95661e3af",
+        "id": "38c7c7c266776224",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30007",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
         "outputs": 1,
@@ -602,15 +347,15 @@
         "y": 1240,
         "wires": [
             [
-                "19acf43af8eac91e",
-                "e737a0c952e5dc56"
+                "671d8fb1b68e57f1",
+                "9ec609a331dfb685"
             ]
         ]
     },
     {
-        "id": "d8980276856f5234",
+        "id": "55cb2e938dc0372e",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
         "outputs": 1,
@@ -623,15 +368,15 @@
         "y": 1660,
         "wires": [
             [
-                "0d09ba0424ec9a9b",
-                "96964a86f684a5be"
+                "6ad32a4cfe6ed0eb",
+                "9e38ad8f8fa13e18"
             ]
         ]
     },
     {
-        "id": "212038c9a5f125b2",
+        "id": "b4bc265e559793fe",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30071",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
         "outputs": 1,
@@ -644,15 +389,15 @@
         "y": 2100,
         "wires": [
             [
-                "f79a9e09aa854f35",
-                "1c6f6be4fd3f6f04"
+                "1cdc75bfaa0bfbe3",
+                "e57235f86a17c118"
             ]
         ]
     },
     {
-        "id": "47d5d2e5aaf81cfb",
+        "id": "111239dcdda15b98",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30073",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
         "outputs": 1,
@@ -665,15 +410,15 @@
         "y": 2380,
         "wires": [
             [
-                "2e2f89bb042d2d9d",
-                "894da70fc7391f83"
+                "d9bbab7df2117aa0",
+                "31faa717432f5bcb"
             ]
         ]
     },
     {
-        "id": "472940938d926ac5",
+        "id": "74321a5486ef2e12",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30075",
         "func": "msg.payload = Math.round(msg.payload[0] * 100) / 100;\nreturn msg;",
         "outputs": 1,
@@ -686,15 +431,15 @@
         "y": 2797.2706298828125,
         "wires": [
             [
-                "b7af3bf9a1601008",
-                "797c002ef538ace1"
+                "a18ae3e092087e9c",
+                "fef5f83c46a65193"
             ]
         ]
     },
     {
-        "id": "f93f9f7c64f511b1",
+        "id": "ddbd0309105fdd76",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -729,15 +474,15 @@
         "y": 940,
         "wires": [
             [
-                "389af89976cd9340",
-                "cccb25d8726656b8"
+                "420f62f2583cad91",
+                "6b8159ad83020446"
             ]
         ]
     },
     {
-        "id": "162c2b1465ed8610",
+        "id": "577023c58ad2d5da",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -772,15 +517,15 @@
         "y": 1180,
         "wires": [
             [
-                "faac1550d3496b31",
-                "3934f0f95661e3af"
+                "8bad341de1976d49",
+                "38c7c7c266776224"
             ]
         ]
     },
     {
-        "id": "d4203335fbb0065f",
+        "id": "4ae7db77ce6da5e8",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -815,15 +560,15 @@
         "y": 1540,
         "wires": [
             [
-                "ee64d5060c007146",
-                "d8980276856f5234"
+                "d50d901d9fb59818",
+                "55cb2e938dc0372e"
             ]
         ]
     },
     {
-        "id": "96851f1a959f8271",
+        "id": "ebf9c51e00cae449",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -858,15 +603,15 @@
         "y": 2320,
         "wires": [
             [
-                "cc32e343c0d0ec7f",
-                "47d5d2e5aaf81cfb"
+                "8ad6361d59457335",
+                "111239dcdda15b98"
             ]
         ]
     },
     {
-        "id": "7518b7c4fb3535bf",
+        "id": "2f822e0156b24531",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -901,15 +646,15 @@
         "y": 2040,
         "wires": [
             [
-                "d3650a9b9108b869",
-                "212038c9a5f125b2"
+                "881bf1ad6264efb3",
+                "b4bc265e559793fe"
             ]
         ]
     },
     {
-        "id": "8e5f314890431558",
+        "id": "325b6a91d0c138bc",
         "type": "buffer-parser",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "",
         "data": "payload",
         "dataType": "msg",
@@ -944,15 +689,15 @@
         "y": 2720,
         "wires": [
             [
-                "4c32c97a040cb5b4",
-                "472940938d926ac5"
+                "d8df70aa3f514bf9",
+                "74321a5486ef2e12"
             ]
         ]
     },
     {
-        "id": "a5f38f234d678158",
+        "id": "c6a08217c11ddb21",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30001 Phase 1 line to neutral volts.",
         "showStatusActivities": true,
         "showErrors": true,
@@ -975,17 +720,17 @@
         "y": 940,
         "wires": [
             [
-                "f93f9f7c64f511b1"
+                "ddbd0309105fdd76"
             ],
             [
-                "5a762832cde5572b"
+                "43c521322db57db6"
             ]
         ]
     },
     {
-        "id": "ee6c93df2ba76fa8",
+        "id": "7b7087a7f969b323",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30007 Current",
         "showStatusActivities": true,
         "showErrors": true,
@@ -1002,22 +747,23 @@
         "emptyMsgOnFail": true,
         "keepMsgProperties": true,
         "delayOnStart": false,
+        "enableDeformedMessages": false,
         "startDelayTime": "",
         "x": 460,
         "y": 1180,
         "wires": [
             [
-                "162c2b1465ed8610"
+                "577023c58ad2d5da"
             ],
             [
-                "c56f90af910a18af"
+                "2964726ce5e8a4a8"
             ]
         ]
     },
     {
-        "id": "1cea48ca24b3c635",
+        "id": "e786255b4b63a32d",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30013 Active power",
         "showStatusActivities": true,
         "showErrors": true,
@@ -1034,22 +780,23 @@
         "emptyMsgOnFail": true,
         "keepMsgProperties": true,
         "delayOnStart": false,
+        "enableDeformedMessages": false,
         "startDelayTime": "",
         "x": 370,
         "y": 1540,
         "wires": [
             [
-                "d4203335fbb0065f"
+                "4ae7db77ce6da5e8"
             ],
             [
-                "937ce96730eb51e0"
+                "eceb96db23130fed"
             ]
         ]
     },
     {
-        "id": "4db07e3dd778f8eb",
+        "id": "2cc8cfa8ccce3d07",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30073 Import active energy",
         "showStatusActivities": true,
         "showErrors": true,
@@ -1072,17 +819,17 @@
         "y": 2320,
         "wires": [
             [
-                "96851f1a959f8271"
+                "ebf9c51e00cae449"
             ],
             [
-                "db378e0d770ee922"
+                "719ba9bd923246ee"
             ]
         ]
     },
     {
-        "id": "a7241cc94295e8a0",
+        "id": "33d3f525fd32a651",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30071 Frequency of supply voltages.",
         "showStatusActivities": true,
         "showErrors": true,
@@ -1105,17 +852,17 @@
         "y": 2040,
         "wires": [
             [
-                "7518b7c4fb3535bf"
+                "2f822e0156b24531"
             ],
             [
-                "1ec605a81ece44a3"
+                "ce20814e5efd9f59"
             ]
         ]
     },
     {
-        "id": "b0b9b80251aabffa",
+        "id": "c95f40b16fd869b7",
         "type": "modbus-getter",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "30075 Export active energy",
         "showStatusActivities": true,
         "showErrors": true,
@@ -1132,21 +879,22 @@
         "emptyMsgOnFail": true,
         "keepMsgProperties": true,
         "delayOnStart": false,
+        "enableDeformedMessages": false,
         "startDelayTime": "",
         "x": 620,
         "y": 2720,
         "wires": [
             [
-                "8e5f314890431558"
+                "325b6a91d0c138bc"
             ],
             []
         ]
     },
     {
-        "id": "f3296c9615b2f82c",
+        "id": "7c180442be53fa33",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
+        "z": "78b0f43927df8cf9",
+        "group": "936f51254fd84fc9",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1164,10 +912,10 @@
         "wires": []
     },
     {
-        "id": "8c64dc39937a5e63",
+        "id": "2672bc5185574ca9",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
+        "z": "78b0f43927df8cf9",
+        "group": "936f51254fd84fc9",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -1185,10 +933,10 @@
         "wires": []
     },
     {
-        "id": "0e4742637aaca65c",
+        "id": "d481cbd4d0e9a444",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
+        "z": "78b0f43927df8cf9",
+        "group": "936f51254fd84fc9",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -1201,15 +949,15 @@
         "font": "",
         "fontSize": "",
         "color": "#000000",
-        "x": 1290,
-        "y": 1520,
+        "x": 1170,
+        "y": 1540,
         "wires": []
     },
     {
-        "id": "4a1d61231dcc2344",
+        "id": "f2db9c1245079aa9",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
+        "z": "78b0f43927df8cf9",
+        "group": "936f51254fd84fc9",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -1227,10 +975,10 @@
         "wires": []
     },
     {
-        "id": "a0d87215546f8f20",
+        "id": "5c1e9f865fa36127",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
+        "z": "78b0f43927df8cf9",
+        "group": "936f51254fd84fc9",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1248,30 +996,9 @@
         "wires": []
     },
     {
-        "id": "75e458e47584cdd2",
-        "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "faab9517a9dfe71e",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Export Energie",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "className": "",
-        "style": false,
-        "font": "",
-        "fontSize": "",
-        "color": "#000000",
-        "x": 1460,
-        "y": 2720,
-        "wires": []
-    },
-    {
-        "id": "b73982b09bba615c",
+        "id": "ef42c2ea35d47344",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 1",
         "func": "deadband",
         "gap": "1",
@@ -1284,14 +1011,14 @@
         "y": 1080,
         "wires": [
             [
-                "c09c6441c4f1093b"
+                "5a760bd0b48cdc42"
             ]
         ]
     },
     {
-        "id": "c5ce272ed5734b5e",
+        "id": "eb02d09b3d52cc88",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "update",
         "action": "",
@@ -1306,9 +1033,9 @@
         ]
     },
     {
-        "id": "c09c6441c4f1093b",
+        "id": "5a760bd0b48cdc42",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30001",
         "func": "msg.payload = Math.round(flow.get('S30001'));\nreturn msg;",
         "outputs": 1,
@@ -1321,14 +1048,14 @@
         "y": 1080,
         "wires": [
             [
-                "c5ce272ed5734b5e"
+                "eb02d09b3d52cc88"
             ]
         ]
     },
     {
-        "id": "313b401539f3367c",
+        "id": "d480f8f0e1484ac9",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1346,14 +1073,14 @@
         "y": 1120,
         "wires": [
             [
-                "c09c6441c4f1093b"
+                "5a760bd0b48cdc42"
             ]
         ]
     },
     {
-        "id": "19acf43af8eac91e",
+        "id": "671d8fb1b68e57f1",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 0.1",
         "func": "deadband",
         "gap": "0.1",
@@ -1366,31 +1093,14 @@
         "y": 1400,
         "wires": [
             [
-                "a7767b533dc8cc2a"
+                "8c4268c12b2b4e23"
             ]
         ]
     },
     {
-        "id": "ce0c3f5f0edd26b8",
-        "type": "GSheet",
-        "z": "b73d554161024e85",
-        "creds": "1c71a74439a03faa",
-        "method": "update",
-        "action": "",
-        "sheet": "",
-        "cells": "solar!F5",
-        "flatten": true,
-        "name": "solar!F5",
-        "x": 1300,
-        "y": 1400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a7767b533dc8cc2a",
+        "id": "8c4268c12b2b4e23",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30007",
         "func": "msg.payload = Math.round(flow.get('S30007'));\nreturn msg;",
         "outputs": 1,
@@ -1403,14 +1113,14 @@
         "y": 1400,
         "wires": [
             [
-                "ce0c3f5f0edd26b8"
+                "1af69193f1c5a874"
             ]
         ]
     },
     {
-        "id": "bc94faa08e176021",
+        "id": "8a354c5442868e8e",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1428,14 +1138,14 @@
         "y": 1460,
         "wires": [
             [
-                "a7767b533dc8cc2a"
+                "8c4268c12b2b4e23"
             ]
         ]
     },
     {
-        "id": "0d09ba0424ec9a9b",
+        "id": "6ad32a4cfe6ed0eb",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 1",
         "func": "deadband",
         "gap": "1",
@@ -1448,14 +1158,14 @@
         "y": 1760,
         "wires": [
             [
-                "e30d68dc35584ea2"
+                "b2d272e2bd3a0a8a"
             ]
         ]
     },
     {
-        "id": "e4a94debbee412ce",
+        "id": "52c39cfad2e34392",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "update",
         "action": "",
@@ -1470,9 +1180,9 @@
         ]
     },
     {
-        "id": "e30d68dc35584ea2",
+        "id": "b2d272e2bd3a0a8a",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013",
         "func": "msg.payload = Math.round(flow.get('S30013'));\nreturn msg;",
         "outputs": 1,
@@ -1485,17 +1195,17 @@
         "y": 1760,
         "wires": [
             [
-                "e4a94debbee412ce",
-                "5937196fd8d61001",
-                "cee4a2664478c9bd",
-                "fa4037a7c5969b3a"
+                "52c39cfad2e34392",
+                "e3998d6231748919",
+                "17ca27f0ca7eb917",
+                "e7cd039873506b49"
             ]
         ]
     },
     {
-        "id": "7aada7aa1fbfcd32",
+        "id": "cd7f6ac4fb1a0d35",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1513,14 +1223,14 @@
         "y": 1820,
         "wires": [
             [
-                "e30d68dc35584ea2"
+                "b2d272e2bd3a0a8a"
             ]
         ]
     },
     {
-        "id": "f79a9e09aa854f35",
+        "id": "1cdc75bfaa0bfbe3",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 1",
         "func": "deadband",
         "gap": "1",
@@ -1533,14 +1243,14 @@
         "y": 2180,
         "wires": [
             [
-                "66924abc4870fd6c"
+                "9121b71782d5f242"
             ]
         ]
     },
     {
-        "id": "80113d4771e0b9d0",
+        "id": "0afbee3935a06d7d",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "update",
         "action": "",
@@ -1555,9 +1265,9 @@
         ]
     },
     {
-        "id": "66924abc4870fd6c",
+        "id": "9121b71782d5f242",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30071",
         "func": "msg.payload = Math.round(flow.get('S30071'));\nreturn msg;",
         "outputs": 1,
@@ -1570,14 +1280,14 @@
         "y": 2200,
         "wires": [
             [
-                "80113d4771e0b9d0"
+                "0afbee3935a06d7d"
             ]
         ]
     },
     {
-        "id": "ecef4733dcfba369",
+        "id": "81da58d680d0c5df",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1595,14 +1305,14 @@
         "y": 2260,
         "wires": [
             [
-                "66924abc4870fd6c"
+                "9121b71782d5f242"
             ]
         ]
     },
     {
-        "id": "2e2f89bb042d2d9d",
+        "id": "d9bbab7df2117aa0",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 1",
         "func": "deadband",
         "gap": "1",
@@ -1615,14 +1325,14 @@
         "y": 2580,
         "wires": [
             [
-                "c0ae8a7140817345"
+                "2f670b620801b7ab"
             ]
         ]
     },
     {
-        "id": "ed90478d1d739a52",
+        "id": "f40d11091d3f04d1",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "update",
         "action": "",
@@ -1637,9 +1347,9 @@
         ]
     },
     {
-        "id": "c0ae8a7140817345",
+        "id": "2f670b620801b7ab",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30073",
         "func": "msg.payload = Math.round(flow.get('S30073'));\nreturn msg;",
         "outputs": 1,
@@ -1652,14 +1362,14 @@
         "y": 2580,
         "wires": [
             [
-                "ed90478d1d739a52"
+                "f40d11091d3f04d1"
             ]
         ]
     },
     {
-        "id": "fd20c6ddfb18701c",
+        "id": "8fc20b2344571714",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1677,14 +1387,14 @@
         "y": 2640,
         "wires": [
             [
-                "c0ae8a7140817345"
+                "2f670b620801b7ab"
             ]
         ]
     },
     {
-        "id": "b7af3bf9a1601008",
+        "id": "a18ae3e092087e9c",
         "type": "rbe",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Block until the value change is greater than 1",
         "func": "deadband",
         "gap": "1",
@@ -1697,14 +1407,14 @@
         "y": 2940,
         "wires": [
             [
-                "9fe157d9e461aef8"
+                "f38f235171dead3f"
             ]
         ]
     },
     {
-        "id": "e2b35e73b7e25c5f",
+        "id": "de3938dce8916954",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "update",
         "action": "",
@@ -1719,9 +1429,9 @@
         ]
     },
     {
-        "id": "9fe157d9e461aef8",
+        "id": "f38f235171dead3f",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30075",
         "func": "msg.payload = Math.round(flow.get('S30075'));\nreturn msg;",
         "outputs": 1,
@@ -1734,14 +1444,14 @@
         "y": 2940,
         "wires": [
             [
-                "e2b35e73b7e25c5f"
+                "de3938dce8916954"
             ]
         ]
     },
     {
-        "id": "e65e129cd53a9af8",
+        "id": "456750ab7182f916",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Once after 90s",
         "props": [
             {
@@ -1759,14 +1469,14 @@
         "y": 3000,
         "wires": [
             [
-                "9fe157d9e461aef8"
+                "f38f235171dead3f"
             ]
         ]
     },
     {
-        "id": "e6377d4710e69daa",
+        "id": "d23b3642cdf0b1e3",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/VoltageS30001",
         "topic": "SolarMeterCloud/Solar/Meter/VoltageS30001",
         "qos": "0",
@@ -1776,15 +1486,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 1250,
         "y": 1000,
         "wires": []
     },
     {
-        "id": "e737a0c952e5dc56",
+        "id": "9ec609a331dfb685",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/CurrentS30007",
         "topic": "SolarMeterCloud/Solar/Meter/CurrentS30007",
         "qos": "0",
@@ -1794,15 +1504,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 1250,
         "y": 1280,
         "wires": []
     },
     {
-        "id": "96964a86f684a5be",
+        "id": "9e38ad8f8fa13e18",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/ActivePowerS30013",
         "topic": "SolarMeterCloud/Solar/Meter/ActivePowerS30013",
         "qos": "0",
@@ -1812,15 +1522,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 970,
         "y": 1660,
         "wires": []
     },
     {
-        "id": "1c6f6be4fd3f6f04",
+        "id": "e57235f86a17c118",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/FrequencyS30071",
         "topic": "SolarMeterCloud/Solar/Meter/FrequencyS30071",
         "qos": "0",
@@ -1830,15 +1540,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 1310.1990966796875,
         "y": 2157.2060546875,
         "wires": []
     },
     {
-        "id": "894da70fc7391f83",
+        "id": "31faa717432f5bcb",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/ImportEnergyS30073",
         "topic": "SolarMeterCloud/Solar/Meter/ImportEnergyS30073",
         "qos": "0",
@@ -1848,15 +1558,15 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 1370,
         "y": 2460,
         "wires": []
     },
     {
-        "id": "797c002ef538ace1",
+        "id": "fef5f83c46a65193",
         "type": "mqtt out",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "SolarMeterCloud/Solar/Meter/ExportEnergyS30075",
         "topic": "SolarMeterCloud/Solar/Meter/ExportEnergyS30075",
         "qos": "0",
@@ -1866,17 +1576,17 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "faf407ee23314340",
+        "broker": "7edadfdc191a40bf",
         "x": 1430,
         "y": 2800,
         "wires": []
     },
     {
-        "id": "c5af409bf723d500",
+        "id": "a94e53cf6821a2af",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "Sheet1!A4:G4",
-        "func": "msg.payload = [flow.get('timestamp'), flow.get('S30073'), flow.get('S30075'),\n               flow.get('S30013Average1day'), flow.get('S30013Minimum1day'), flow.get('S30013Maximum1day'),];\nreturn msg;",
+        "func": "msg.payload = [flow.get('timestamp'),flow.get('S30013Average1day'), flow.get('S30013Minimum1day'), flow.get('S30013Maximum1day')\n, flow.get('S30073'), flow.get('S30075'),];\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1884,17 +1594,17 @@
         "finalize": "",
         "libs": [],
         "x": 560,
-        "y": 3100,
+        "y": 3160,
         "wires": [
             [
-                "623c14a2745316bd"
+                "76b917ab51814f02"
             ]
         ]
     },
     {
-        "id": "623c14a2745316bd",
+        "id": "76b917ab51814f02",
         "type": "GSheet",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "creds": "1c71a74439a03faa",
         "method": "append",
         "action": "",
@@ -1903,15 +1613,15 @@
         "flatten": true,
         "name": "solarStatistics!A4:G4",
         "x": 780,
-        "y": 3100,
+        "y": 3160,
         "wires": [
             []
         ]
     },
     {
-        "id": "a8df71ec368327fb",
+        "id": "484f2c3cfa53c147",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "every day at 02:00 o' clock",
         "props": [
             {
@@ -1930,17 +1640,17 @@
         "payload": "",
         "payloadType": "date",
         "x": 300,
-        "y": 3100,
+        "y": 3160,
         "wires": [
             [
-                "c5af409bf723d500"
+                "a94e53cf6821a2af"
             ]
         ]
     },
     {
-        "id": "d33e25af7ccaf83d",
+        "id": "861c690d440a0207",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1450,
@@ -1948,9 +1658,9 @@
         "wires": []
     },
     {
-        "id": "ea72d497e082b0fb",
+        "id": "40cd998426cb9d94",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1470,
@@ -1958,9 +1668,9 @@
         "wires": []
     },
     {
-        "id": "e89635168d35187b",
+        "id": "381dbee28404a6db",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1410,
@@ -1968,9 +1678,9 @@
         "wires": []
     },
     {
-        "id": "683c566eb6338571",
+        "id": "0aa1ce147549586b",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1370,
@@ -1978,9 +1688,9 @@
         "wires": []
     },
     {
-        "id": "7ee4a3ecd288371f",
+        "id": "07831dbda73430d3",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1310,
@@ -1988,9 +1698,9 @@
         "wires": []
     },
     {
-        "id": "f1a54ad2062bc2bc",
+        "id": "d4637a07c833a336",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1291.1990966796875,
@@ -1998,9 +1708,9 @@
         "wires": []
     },
     {
-        "id": "e31d5947c4805e4a",
+        "id": "60f9d3e49146e697",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Average1day",
         "func": "flow.set('S30013Average1day', msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -2016,9 +1726,9 @@
         ]
     },
     {
-        "id": "f57f7390f3fdebde",
+        "id": "e9bf4735789b4534",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Minimum1day",
         "func": "flow.set('S30013Minimum1day', msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -2034,9 +1744,9 @@
         ]
     },
     {
-        "id": "a9163f1349a5105e",
+        "id": "ea0c825cad972fa7",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Maximum1day",
         "func": "flow.set('S30013Maximum1day', msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -2052,9 +1762,9 @@
         ]
     },
     {
-        "id": "af285e46562c0c74",
+        "id": "a9ca21c8c1a6dcaa",
         "type": "comment",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "present value",
         "info": "",
         "x": 1310,
@@ -2062,22 +1772,22 @@
         "wires": []
     },
     {
-        "id": "e386e9750236341d",
+        "id": "a9fdca1c33b88176",
         "type": "comment",
-        "z": "b73d554161024e85",
-        "name": "solar statistics",
+        "z": "78b0f43927df8cf9",
+        "name": "solar statistics fully available",
         "info": "",
-        "x": 250,
-        "y": 3060,
+        "x": 780,
+        "y": 3200,
         "wires": []
     },
     {
-        "id": "5937196fd8d61001",
+        "id": "e3998d6231748919",
         "type": "aggregator",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Average1day",
         "topic": "",
-        "intervalCount": 1,
+        "intervalCount": "1",
         "intervalUnits": "d",
         "submitIncompleteInterval": false,
         "submitPerTopic": false,
@@ -2086,17 +1796,17 @@
         "y": 1860,
         "wires": [
             [
-                "e31d5947c4805e4a"
+                "60f9d3e49146e697"
             ]
         ]
     },
     {
-        "id": "cee4a2664478c9bd",
+        "id": "17ca27f0ca7eb917",
         "type": "aggregator",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Minimum1day",
         "topic": "",
-        "intervalCount": 1,
+        "intervalCount": "1",
         "intervalUnits": "d",
         "submitIncompleteInterval": false,
         "submitPerTopic": false,
@@ -2105,17 +1815,17 @@
         "y": 1900,
         "wires": [
             [
-                "f57f7390f3fdebde"
+                "e9bf4735789b4534"
             ]
         ]
     },
     {
-        "id": "fa4037a7c5969b3a",
+        "id": "e7cd039873506b49",
         "type": "aggregator",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "S30013Maximum1day",
         "topic": "",
-        "intervalCount": 1,
+        "intervalCount": "1",
         "intervalUnits": "d",
         "submitIncompleteInterval": false,
         "submitPerTopic": false,
@@ -2124,14 +1834,14 @@
         "y": 1940,
         "wires": [
             [
-                "a9163f1349a5105e"
+                "ea0c825cad972fa7"
             ]
         ]
     },
     {
-        "id": "552d5d66.9404f4",
+        "id": "2adbd67c4683f59b",
         "type": "inject",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "intervall 1 sec",
         "props": [
             {
@@ -2153,14 +1863,14 @@
         "y": 700,
         "wires": [
             [
-                "19133ae9.fd9765"
+                "4a1fbed4b3770578"
             ]
         ]
     },
     {
-        "id": "19133ae9.fd9765",
+        "id": "4a1fbed4b3770578",
         "type": "function",
-        "z": "b73d554161024e85",
+        "z": "78b0f43927df8cf9",
         "name": "timestamp",
         "func": "global.set('timestamp', new Date().toISOString() ); \nnew Date(1777139513587).toISOString()\n// Generate an ISO‑8601 timestamp in UTC (English, international, unambiguous)\nmsg.payload = new Date().toISOString();\nflow.set('timestamp', msg.payload);\nreturn msg;",
         "outputs": 1,
@@ -2173,15 +1883,15 @@
         "y": 700,
         "wires": [
             [
-                "1502cb78.076475"
+                "7e209d733d492bae"
             ]
         ]
     },
     {
-        "id": "1502cb78.076475",
+        "id": "7e209d733d492bae",
         "type": "ui_text",
-        "z": "b73d554161024e85",
-        "group": "8c682275a95735db",
+        "z": "78b0f43927df8cf9",
+        "group": "85f3ae867011b7a8",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -2199,87 +1909,307 @@
         "wires": []
     },
     {
-        "id": "669c51e9fdb44428",
-        "type": "ui_template",
-        "z": "6632c20fd7e2e020",
-        "group": "3c7736c82f324006",
-        "name": "Active Power",
-        "order": 1,
-        "width": 18,
-        "height": "12",
-        "format": "",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 330,
-        "y": 140,
+        "id": "1af69193f1c5a874",
+        "type": "GSheet",
+        "z": "78b0f43927df8cf9",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "",
+        "cells": "solar!F5",
+        "flatten": true,
+        "name": "solar!F5",
+        "x": 1300,
+        "y": 1400,
         "wires": [
             []
         ]
     },
     {
-        "id": "aad2cc22ecad25b5",
-        "type": "ui_template",
-        "z": "6632c20fd7e2e020",
-        "group": "a7ab4773221b2762",
-        "name": "Import Energy",
-        "order": 1,
-        "width": 18,
-        "height": "12",
-        "format": "",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 340,
-        "y": 220,
+        "id": "43d065da5293cc4e",
+        "type": "comment",
+        "z": "78b0f43927df8cf9",
+        "name": "solar statistics rolling 30‑day period ",
+        "info": "",
+        "x": 300,
+        "y": 3300,
+        "wires": []
+    },
+    {
+        "id": "3d428d23b4907d11",
+        "type": "function",
+        "z": "78b0f43927df8cf9",
+        "name": "solarRolling!A33:F33",
+        "func": "msg.payload = [flow.get('timestamp'),flow.get('S30013Average1day'), flow.get('S30013Minimum1day'), flow.get('S30013Maximum1day')\n, flow.get('S30073'), flow.get('S30075'),];\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 3600,
+        "wires": [
+            [
+                "9c0f2a60d5113972"
+            ]
+        ]
+    },
+    {
+        "id": "bcb6c0820d8d6214",
+        "type": "comment",
+        "z": "78b0f43927df8cf9",
+        "name": "update cells",
+        "info": "",
+        "x": 150,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "be4877029760f382",
+        "type": "comment",
+        "z": "78b0f43927df8cf9",
+        "name": "Get Row",
+        "info": "",
+        "x": 860,
+        "y": 3360,
+        "wires": []
+    },
+    {
+        "id": "62bf70c920678746",
+        "type": "GSheet",
+        "z": "78b0f43927df8cf9",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "",
+        "cells": "solarRolling!A4:F32",
+        "flatten": false,
+        "name": "solarRolling!A4:F32",
+        "x": 150,
+        "y": 3600,
+        "wires": [
+            [
+                "9335bf2081343b9a"
+            ]
+        ]
+    },
+    {
+        "id": "8866c3ee6f7ce2c4",
+        "type": "GSheet",
+        "z": "78b0f43927df8cf9",
+        "creds": "1c71a74439a03faa",
+        "method": "get",
+        "action": "",
+        "sheet": "",
+        "cells": "solarRolling!A5:F33",
+        "flatten": false,
+        "name": "solarRolling!A5:F33",
+        "x": 870,
+        "y": 3400,
+        "wires": [
+            [
+                "998fb99750c29f0f"
+            ]
+        ]
+    },
+    {
+        "id": "998fb99750c29f0f",
+        "type": "delay",
+        "z": "78b0f43927df8cf9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "30",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1170,
+        "y": 3400,
+        "wires": [
+            [
+                "62bf70c920678746"
+            ]
+        ]
+    },
+    {
+        "id": "9335bf2081343b9a",
+        "type": "delay",
+        "z": "78b0f43927df8cf9",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "30",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 3600,
+        "wires": [
+            [
+                "3d428d23b4907d11"
+            ]
+        ]
+    },
+    {
+        "id": "9c0f2a60d5113972",
+        "type": "GSheet",
+        "z": "78b0f43927df8cf9",
+        "creds": "1c71a74439a03faa",
+        "method": "update",
+        "action": "",
+        "sheet": "",
+        "cells": "solarRolling!A33:F33",
+        "flatten": true,
+        "name": "solarRolling!A33:F33",
+        "x": 1160,
+        "y": 3600,
         "wires": [
             []
         ]
     },
     {
-        "id": "c6d695538ef7807e",
-        "type": "ui_template",
-        "z": "6632c20fd7e2e020",
-        "group": "c22dde84e87a54ab",
-        "name": "Export Energy",
-        "order": 1,
-        "width": "18",
-        "height": "12",
-        "format": "",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 340,
-        "y": 280,
+        "id": "977d3a3607f2dc2d",
+        "type": "comment",
+        "z": "78b0f43927df8cf9",
+        "name": "Update Cells",
+        "info": "",
+        "x": 1130,
+        "y": 3560,
+        "wires": []
+    },
+    {
+        "id": "c9407f7cf7d0241f",
+        "type": "inject",
+        "z": "78b0f43927df8cf9",
+        "name": "every day at 03:00 o' clock",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 03 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 3400,
         "wires": [
-            []
+            [
+                "8866c3ee6f7ce2c4"
+            ]
         ]
     },
     {
-        "id": "fe9027d7f7365c4a",
-        "type": "ui_template",
-        "z": "6632c20fd7e2e020",
-        "group": "c22dde84e87a54ab",
-        "name": "Table Diagram",
+        "id": "91059c5b0441c792",
+        "type": "modbus-client",
+        "name": "Solarstrom",
+        "clienttype": "serial",
+        "bufferCommands": true,
+        "stateLogEnabled": false,
+        "queueLogEnabled": false,
+        "failureLogEnabled": true,
+        "tcpHost": "127.0.0.1",
+        "tcpPort": "502",
+        "tcpType": "DEFAULT",
+        "serialPort": "/dev/ttyACM0",
+        "serialType": "RTU-BUFFERD",
+        "serialBaudrate": "19200",
+        "serialDatabits": "8",
+        "serialStopbits": "1",
+        "serialParity": "none",
+        "serialConnectionDelay": "1000",
+        "serialAsciiResponseStartDelimiter": "0x3A",
+        "unit_id": "20",
+        "commandDelay": "1",
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": true,
+        "reconnectTimeout": "2000",
+        "parallelUnitIdsAllowed": true,
+        "showErrors": false,
+        "showWarnings": true,
+        "showLogs": true
+    },
+    {
+        "id": "936f51254fd84fc9",
+        "type": "ui_group",
+        "name": "Solar",
+        "tab": "f28bfc920b47689d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1c71a74439a03faa",
+        "type": "gauth",
+        "name": "Unknown"
+    },
+    {
+        "id": "7edadfdc191a40bf",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "star",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "85f3ae867011b7a8",
+        "type": "ui_group",
+        "name": "Timestamp",
+        "tab": "f28bfc920b47689d",
         "order": 1,
-        "width": "18",
-        "height": "12",
-        "format": "",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "className": "",
-        "x": 340,
-        "y": 340,
-        "wires": [
-            []
-        ]
+        "disp": true,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f28bfc920b47689d",
+        "type": "ui_tab",
+        "name": "SolarMeterCloud",
+        "icon": "cloud",
+        "order": 8,
+        "disabled": false,
+        "hidden": false
     }
 ]
